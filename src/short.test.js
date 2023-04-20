@@ -15,3 +15,21 @@ test("", () => {
     expect(min(str)).toBe('b');
   });
 
+
+  test("", () => {
+    const str = "Xin chào tất cả mọi người";
+    expect(min(str)).toBe('cả');
+  });
+
+  test("", () => {
+    const str = "Xin chào tất cả ha mọi người";
+    expect(min(str)).toBe('cả');
+  });
+
+  test("", () => {
+    const str = "Bài thuat toan";
+    expect(min(str)).toBe('Bài');
+  });
+
+
+
