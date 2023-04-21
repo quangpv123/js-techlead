@@ -1,4 +1,4 @@
-function max(num){
+function bigestNumber(num){
     var maxNumber = num[0];
     for(i=1; i<num.length; i++){
         if(num[i]>maxNumber){
@@ -8,4 +8,4 @@ function max(num){
     return maxNumber;
 }
 
-module.exports = max
+module.exports = bigestNumber
