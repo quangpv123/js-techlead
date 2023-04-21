@@ -1,21 +1,21 @@
-const inNumber = require("./contain");
+const numberOfStringContainA = require("./contain");
 
 test("", () => {
-    str = 'Test in ra chuỗi chứa ký tự a';
-   expect(inNumber(str)).toBe(3);
+    var str = 'Test in ra chuỗi chứa ký tự a';
+   expect(numberOfStringContainA(str)).toBe(3);
 });
 
 test("", () => {
-    str = 'Test in ra chuỗi chứa ký tự a lần hai';
-   expect(inNumber(str)).toBe(4);
+    var str = 'Test in ra chuỗi chứa ký tự a lần hai';
+   expect(numberOfStringContainA(str)).toBe(4);
 });
 
 test("", () => {
-    str = 'Test in ra chuỗi chứa ký tự a lần ba';
-   expect(inNumber(str)).toBe(4);
+    var str = 'Test in ra chuỗi chứa ký tự a lần ba';
+   expect(numberOfStringContainA(str)).toBe(4);
 });
 
 test("", () => {
-    str = 'Test in ra chuỗi chứa ký tự a lần ô ba ma';
-   expect(inNumber(str)).toBe(5);
+    var str = 'Test in ra chuỗi chứa ký tự a lần ô ba ma';
+   expect(numberOfStringContainA(str)).toBe(5);
 });

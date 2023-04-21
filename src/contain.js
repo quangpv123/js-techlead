@@ -1,4 +1,4 @@
-function inNumber(str){
+function numberOfStringContainA(str){
     var chuoiArr = str.split(' ');
     var number = 0;
     for (i=0; i < chuoiArr.length; i++){
@@ -9,15 +9,4 @@ function inNumber(str){
     return number;
 };
 
-module.exports = inNumber
-
-
-// function chuoi(str) {
-//    var containArr = str.split(' ');
-//    for(i=0;i<containArr.length;i++){
-//     if (containArr[i].indexOf('a') !== -1){
-//         var containStr = containArr[i];
-//     }
-//    }
-//    return containStr;
-// }
+module.exports = numberOfStringContainA
