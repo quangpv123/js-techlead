@@ -1,14 +1,14 @@
-const strlength = require("./strlength");
+const lengthString = require("./strlength");
 
 test("", () => {
-    expect(strlength('hello')).toBe(5);
+    expect(lengthString('hello')).toBe(5);
   });
 
   test("", () => {
-    expect(strlength('hello 123')).toBe(9);
+    expect(lengthString('hello 123')).toBe(9);
   });
 
   test("", () => {
-    expect(strlength('hello 123 456')).toBe(13);
+    expect(lengthString('hello 123 456')).toBe(13);
   });
   
