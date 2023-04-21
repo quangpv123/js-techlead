@@ -12,5 +12,3 @@ function median(str){
 }
 
 module.exports = median
-
-// str = "5 3 2 4 1 6"
