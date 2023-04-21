@@ -1,4 +1,4 @@
-function longest(str){
+function longestWordInTheList(str){
     var longArr = str.split(' ');
     var longestWord = longArr[0];
     for(i=1; i<longArr.length; i++){
@@ -8,4 +8,4 @@ function longest(str){
     }
     return longestWord;
 }
-module.exports = longest
+module.exports = longestWordInTheList

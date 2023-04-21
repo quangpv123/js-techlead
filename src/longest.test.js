@@ -1,18 +1,18 @@
-const longest = require("./longest");
+const longestWordInTheList = require("./longest");
 
 test("", () => {
-    str = "test in ra từ dài nhất"
-  expect(longest(str)).toBe('test');
+    var str = "test in ra từ dài nhất"
+  expect(longestWordInTheList(str)).toBe('test');
 });
 
 
 test("", () => {
-    str = "test in ra từ dài nhất lần haiiiiiii"
-  expect(longest(str)).toBe('haiiiiiii');
+    var str = "test in ra từ dài nhất lần haiiiiiii"
+  expect(longestWordInTheList(str)).toBe('haiiiiiii');
 });
 
 
 test("", () => {
-    str = "testtttttttt in ra từ dài nhất lần baaaaa";
-  expect(longest(str)).toBe('testtttttttt');
+    var str = "testtttttttt in ra từ dài nhất lần baaaaa";
+  expect(longestWordInTheList(str)).toBe('testtttttttt');
 });
