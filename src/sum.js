@@ -1,4 +1,4 @@
-function sum(str){
+function sumOfNumberDivisible3And5(str){
     var newArr = str.split(' ');
     var sum3and5 = 0;
     for (var a of newArr){
@@ -10,4 +10,4 @@ function sum(str){
     return sum3and5;
 };
 
-module.exports = sum
+module.exports = sumOfNumberDivisible3And5

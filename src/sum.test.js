@@ -1,17 +1,17 @@
-const sum = require("./sum");
+const sumOfNumberDivisible3And5 = require("./sum");
 
 test("", () => {
-    str = '1 3 4 15 30'
-  expect(sum(str)).toBe(45);
+    var str = '1 3 4 15 30'
+  expect(sumOfNumberDivisible3And5(str)).toBe(45);
 });
 
 
 test("", () => {
-    str = '1 3 4 15 30 25 40 45'
-  expect(sum(str)).toBe(90);
+    var str = '1 3 4 15 30 25 40 45'
+  expect(sumOfNumberDivisible3And5(str)).toBe(90);
 });
 
 test("", () => {
-    str = '1 3 4 15 30 90'
-  expect(sum(str)).toBe(135);
+    var str = '1 3 4 15 30 90'
+  expect(sumOfNumberDivisible3And5(str)).toBe(135);
 });
