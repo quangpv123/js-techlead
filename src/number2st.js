@@ -1,4 +1,4 @@
-function number(str){
+function secondLargestNumber(str){
     var numberArr = str.split(' ');
     var numberOder = numberArr.sort(function(a, b){return a - b});
     var number2st = numberOder[numberOder.length-2];
@@ -6,4 +6,4 @@ function number(str){
 
 }
 
-module.exports = number
+module.exports = secondLargestNumber
