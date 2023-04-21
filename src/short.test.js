@@ -1,34 +1,34 @@
-const min = require("./short");
+var shortestString = require("./short");
 
 test("", () => {
-  const str = "Hello anh em";
-  expect(min(str)).toBe('em');
+  var str = "Hello anh em";
+  expect(shortestString(str)).toBe('em');
 });
 
 test("", () => {
-    const str = "Hello anh em techlead a";
-    expect(min(str)).toBe('a');
+    var str = "Hello anh em techlead a";
+    expect(shortestString(str)).toBe('a');
   });
 
   test("", () => {
-    const str = "Hello anh em techlead b";
-    expect(min(str)).toBe('b');
+    var str = "Hello anh em techlead b";
+    expect(shortestString(str)).toBe('b');
   });
 
 
   test("", () => {
-    const str = "Xin chào tất cả mọi người";
-    expect(min(str)).toBe('cả');
+    var str = "Xin chào tất cả mọi người";
+    expect(shortestString(str)).toBe('cả');
   });
 
   test("", () => {
-    const str = "Xin chào tất cả ha mọi người";
-    expect(min(str)).toBe('cả');
+    var str = "Xin chào tất cả ha mọi người";
+    expect(shortestString(str)).toBe('cả');
   });
 
   test("", () => {
-    const str = "Bài thuat toan";
-    expect(min(str)).toBe('Bài');
+    var str = "Bài thuat toan";
+    expect(shortestString(str)).toBe('Bài');
   });
 
 

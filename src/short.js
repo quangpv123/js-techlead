@@ -1,4 +1,4 @@
-function min(str){
+function shortestString(str){
     var arr = str.split(' ');
     var minLength = arr[0];
     for(i=1; i<arr.length; i++){
@@ -9,4 +9,4 @@ function min(str){
     return minLength;
 }
 
-module.exports = min
+module.exports = shortestString
