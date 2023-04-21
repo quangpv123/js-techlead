@@ -1,21 +1,21 @@
-const median = require("./median");
+const medianOfNumber = require("./median");
 test ("", () => {
-    str = "5 3 2 4 1"
-    expect(median(str)).toBe(3);
+    var str = "5 3 2 4 1"
+    expect(medianOfNumber(str)).toBe(3);
 });
 
 test ("", () => {
-    str = "5 3 2 4 1 9 10"
-    expect(median(str)).toBe(4);
+    var str = "5 3 2 4 1 9 10"
+    expect(medianOfNumber(str)).toBe(4);
 });
 
 test ("", () => {
-    str = "-5 5 3 2 4 1"
-    expect(median(str)).toBe(2.5);
+    var str = "-5 5 3 2 4 1"
+    expect(medianOfNumber(str)).toBe(2.5);
 });
 
 
 test ("", () => {
-    str = "5 3 2 4 1 6"
-    expect(median(str)).toBe(3.5);
+    var str = "5 3 2 4 1 6"
+    expect(medianOfNumber(str)).toBe(3.5);
 });

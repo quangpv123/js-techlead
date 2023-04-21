@@ -1,4 +1,4 @@
-function median(str){
+function medianOfNumber(str){
     var strArr = str.split(' ');
     var arrOder = strArr.sort((function(a, b){return a - b}));
     var a = arrOder.length;
@@ -11,4 +11,4 @@ function median(str){
     return medianValue;
 }
 
-module.exports = median
+module.exports = medianOfNumber
