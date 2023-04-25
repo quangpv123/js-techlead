@@ -5,7 +5,6 @@ function twoStringLargestOverlapOfCharacters(arr){
         for(j=i+1; j<arr.length; j++){
             var overlap = 0;
             for(k=0; k<arr[i].length; k++){
-                // var overlap = 0;
                if (arr[j].includes(arr[i][k])){
                     overlap++;
                }                
