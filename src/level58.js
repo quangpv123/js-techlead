@@ -1,4 +1,4 @@
-function switchOrder(id, newOrder, arr){
+function switchOrder(id, newOrder, arr) {
     var newArr = arr.map(function(item){
         if(item.id === id){
             item.order = newOrder;
@@ -6,6 +6,8 @@ function switchOrder(id, newOrder, arr){
         }
         return item;
     })
+    
+    return newArr
 }
 
 module.exports = switchOrder
