@@ -1,26 +1,12 @@
-function numberOfSubsequencesThatSumToTheTargerValue(arr, targetValue){
-    var numberOfSubsequences = 0;
-    for(i=0; i<arr.length; i++){
-        
-        for(k=i+1; k < arr.length; k++){
-            var sum = arr[i];
-            for (let j = k; j < arr.length; j++) {  
-                if (sum > targetValue) {
-                  break;
-                }
-      
-                if (sum === targetValue) {
-                  numberOfSubsequences++;
-                  break;
-                }
-    
-                if (sum < targetValue){
-                    sum += arr[j];
-                }
-            }
-        } 
+function numberOfSubsequencesThatSumToTheTargerValue(nums, target) {
+    var dp = new Array(nums.length + 1).fill(0);
+    dp[0] = 1;
+    for (i = 1; i <= nums.length; i++) {
+      for (j = target; j >= nums[i - 1]; j--) {
+        dp[j] += dp[j - nums[i - 1]];
+      }
     }
-    return numberOfSubsequences;
-}
+    return dp[target];
+  }
 
 module.exports = numberOfSubsequencesThatSumToTheTargerValue
